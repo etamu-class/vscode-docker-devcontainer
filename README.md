@@ -104,20 +104,25 @@ your GitHub account.
    and [How to Set up SSH and Generate an SSH Key on Windows 11](https://davidaugustat.com/windows/windows-11-setup-ssh)
    Open up a command line terminal and perform the configuration and generate an `ssh` key like this:
    ```
-   $ git config --global user.name "John Student"
-   
-   $ git config --global user.email jstudent@leomail.tamuc.edu
-   
-   $ git config --global core.autocrlf false
-   
-   $ git config --list
+   git config --global user.name "John Student"
+   ```
+   ```
+   git config --global user.email jstudent@leomail.tamuc.edu
+   ```
+   ```
+   git config --global core.autocrlf false
+   ```
+   ```
+   git config --list
    ```
 
    This lists out your git configuration, check that user.email, user.name and core.autocrlf
    have been set correctly.
 
    ```
-   $ ssh-keygen
+   ssh-keygen
+   ```
+   ```
    Generating public/private rsa key pair.
    Enter file in which to save the key (C:\Users\Quickemu/.ssh/id_rsa):
    Created directory 'C:\\Users\\Quickemu/.ssh'.
