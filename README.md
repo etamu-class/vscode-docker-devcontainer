@@ -162,7 +162,10 @@ your GitHub account.
   5. **IMPORTANT** If you have never connected to Github before using ssh, you should ensure that Github is a known host and that your ssh
    key access that you just configured is working.  Do the following to test this:
    ```
-   $ ssh git@github.com
+   ssh git@github.com
+   ```
+   If this succeeds, you should see that it is able to successfully authenticate:
+   ```
     The authenticity of host 'github.com (140.82.112.4)' can't be established.
     ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
     Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
@@ -273,7 +276,7 @@ This repository has a `.devcontainer` directory that can be used to test that yo
    or there may be other issues.
   4. If you can successfully reopen in a container, open a terminal inside of your running container and perform a
    ```
-   $ ssh git@github.com
+   ssh git@github.com
    ```
    from inside of the container to test that your `ssh` key has been communicated into the container.  If you get a permission
    denied: ssh key error, probably you need to follow the steps again to check and enable your `ssh-agent`.
