@@ -85,7 +85,7 @@ your GitHub account.
    not have `git` already installed.  In all cases, check if `git` is installed by opening a terminal
    on your system and executing:
    ```
-   $ git --version
+   git --version
    ```
    On MacOS systems, often it will give you the option to install XCode developer tools if git is currently
    not available.  You should accept this if you see it on MacOS to install the `git` tools.  If you do not
@@ -105,12 +105,18 @@ your GitHub account.
    Open up a command line terminal and perform the configuration and generate an `ssh` key like this:
    ```
    $ git config --global user.name "John Student"
+   
    $ git config --global user.email jstudent@leomail.tamuc.edu
+   
    $ git config --global core.autocrlf false
+   
    $ git config --list
+   ```
+
    This lists out your git configuration, check that user.email, user.name and core.autocrlf
    have been set correctly.
 
+   ```
    $ ssh-keygen
    Generating public/private rsa key pair.
    Enter file in which to save the key (C:\Users\Quickemu/.ssh/id_rsa):
@@ -176,18 +182,18 @@ your GitHub account.
    
    You can also try to start it by hand by opening a terminal and performing:
    ```
-   $ ssh-agent
+   ssh-agent
    ```
    But this will only start it for the current session, and it will not be restarted on a reboot.
    When `ssh-agent` is running, ensure that your `ssh` key is added and available for the
    agent.  On a terminal perform:
    ```
-   $ ssh-add .ssh\id_ed25519
+   ssh-add .ssh\id_ed25519
    ```
    to add your `id_ed25519` key, for example, to the `ssh-agent` list of keys.  You can also check if the
    agent is running and if so see which keys it is managing by performing
    ```
-   $ ssh-add -l
+   ssh-add -l
    ```
 
 
@@ -204,11 +210,11 @@ setup by Docker of WSL often does not work fully or correctly.
 
   1. Open a terminal and perform the following to ensure the WSL system is installed and available.
    ```
-   $ wsl --install
+   wsl --install
    ```
   2. Once WSL is installed, ensure a default container is downloaded and available on the system
   ```
-  $ wsl --install ubuntu
+  wsl --install ubuntu
   ```
 
 - **Windows/Mac:** Get the most recent Docker Desktop installer from [here](https://www.docker.com/get-started/).
