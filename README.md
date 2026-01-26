@@ -268,7 +268,7 @@ The Remote Containers extension page is [here](https://marketplace.visualstudio.
 
 This repository has a `.devcontainer` directory that can be used to test that your Docker/VSCode DevContainer configuration is working.
 
-  1. Clone a new repository using the Docker `Source Control` (left hand side) area.  Clone the `http` url of this repository to
+  1. Clone a new repository using the VSCode `Source Control` (left hand side) area.  Clone the `http` url of this repository to
    a local directory on your host system.
   2. Open the repository in a new VSCode folder when asked.
   3. If Docker Desktop engine is running, you should get a popup (lower right) asking to reopen the Folder in a Container.  Accept
